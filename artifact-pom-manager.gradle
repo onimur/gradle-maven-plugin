@@ -1,4 +1,4 @@
-apply from: 'utils.gradle'
+apply from: 'https://raw.githubusercontent.com/onimur/gradle-maven-plugin/new-package/utils.gradle'
  
 def decoratePom(pom) {
     pom.name = getStringProperty("mavProjectName")
