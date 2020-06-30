@@ -40,10 +40,10 @@ project.afterEvaluate {
 
             if (isToGithubPackages) {
                 maven {
-                    name = "GithubPackages"
+                    name = 'GithubPackages'
                     credentials {
-                        username getStringProperty("mavGithubPackagesUser")
-                        password getStringProperty("mavGithubPackagesToken")
+                        username = getStringProperty("mavGithubPackagesUser")
+                        password = getStringProperty("mavGithubPackagesToken")
                     }
                     url = getStringProperty("mavGithubPackagesUrl")
                 }
