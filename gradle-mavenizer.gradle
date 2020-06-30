@@ -1,8 +1,8 @@
 apply plugin: 'maven-publish'
 
-apply from: 'utils.gradle'
-apply from: 'artifact-javadoc-handler.gradle'
-apply from: 'artifact-pom-manager.gradle'
+apply from: 'https://raw.githubusercontent.com/onimur/gradle-maven-plugin/new-package/utils.gradle'
+apply from: 'https://raw.githubusercontent.com/onimur/gradle-maven-plugin/new-package/artifact-javadoc-handler.gradle'
+apply from: 'https://raw.githubusercontent.com/onimur/gradle-maven-plugin/new-package/artifact-pom-manager.gradle'
 
 project.afterEvaluate {
     publishing {
