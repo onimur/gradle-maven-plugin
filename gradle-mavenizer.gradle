@@ -1,9 +1,9 @@
 apply plugin: 'maven-publish'
 
 def gradlePluginVersion = project.hasProperty('mavPluginVersion') ? project.mavPluginVersion : 'master'
-apply from: "https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/${gradlePluginVersion}/utils.gradle"
-apply from: "https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/${gradlePluginVersion}/artifact-javadoc-handler.gradle"
-apply from: "https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/${gradlePluginVersion}/artifact-pom-manager.gradle"
+apply from: "https://raw.githubusercontent.com/onimur/gradle-maven-plugin/${gradlePluginVersion}/utils.gradle"
+apply from: "https://raw.githubusercontent.com/onimur/gradle-maven-plugin/${gradlePluginVersion}/artifact-javadoc-handler.gradle"
+apply from: "https://raw.githubusercontent.com/onimur/gradle-maven-plugin/${gradlePluginVersion}/artifact-pom-manager.gradle"
 
 project.afterEvaluate {
     publishing {
