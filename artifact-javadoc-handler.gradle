@@ -1,4 +1,4 @@
-apply from: 'https://raw.githubusercontent.com/onimur/gradle-maven-plugin/new-package/utils.gradle'
+apply from: 'https://raw.githubusercontent.com/onimur/gradle-maven-plugin/master/utils.gradle'
 
 if (isAndroidProject()) {
     task androidJavadocs(type: Javadoc) {
